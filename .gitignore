@@ -1,0 +1,5 @@
+.odo/env
+.odo/odo-file-index.json
+main
+.idea/
+.DS_Store
