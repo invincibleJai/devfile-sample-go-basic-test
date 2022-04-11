@@ -22,6 +22,16 @@ components:
         buildContext: .
         rootRequired: false
   - name: outerloop-deploy
+    attributes:
+      appstudio.has/replicas: 1
+      appstudio.has/route: route1
+      appstudio.has/storageLimit: 400Mi
+      appstudio.has/storageRequest: 200Mi
+      appstudio.has/cpuLimit: "2"
+      appstudio.has/cpuRequest: 700m
+      appstudio.has/memoryLimit: 500Mi
+      appstudio.has/memoryRequest: 400Mi
+      alpha.dockerimage-port: 8081
     kubernetes:
       uri: outerloop-deploy.yaml
 commands:
