@@ -31,7 +31,7 @@ components:
       deployment/cpuRequest: 700m
       deployment/memoryLimit: 500Mi
       deployment/memoryRequest: 400Mi
-      alpha.dockerimage-port: 8081
+      deployment/containerimage-port: 8081
     kubernetes:
       uri: outerloop-deploy.yaml
 commands:
